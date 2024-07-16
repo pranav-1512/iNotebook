@@ -6,7 +6,7 @@ function Signup(props) {
     const [credentials, setCredentials] = useState({name:"", email:"", password:""})
     const handleSubmit = async(e)=>{
         e.preventDefault()
-        const response = await fetch("http://localhost:5000/api/user/createuser", {
+        const response = await fetch("https://i-notebook-backend-lyart.vercel.app/api/user/createuser", {
             method: "POST", 
             mode: "cors",
             headers: {
