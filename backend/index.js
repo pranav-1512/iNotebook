@@ -12,7 +12,7 @@ const notes = require('./routes/notes')
 // app.use(cors())
 app.use(cors(
     {
-        origin: [],
+        origin: ["https://i-notebook-frontend-weld.vercel.app"],
         methods: ["POST","GET"],
         credentials: true
     }
