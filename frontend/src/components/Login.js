@@ -6,7 +6,7 @@ function Login(props) {
     const [credentials, setCredentials] = useState({email:"", password:""})
     const handleSubmit = async(e)=>{
         e.preventDefault()
-        const response = await fetch("http://localhost:5000/api/user/login", {
+        const response = await fetch("https://i-notebook-backend-lyart.vercel.app/api/user/login", {
             method: "POST", 
             mode: "cors",
             headers: {
@@ -31,7 +31,7 @@ function Login(props) {
     }
 
     const getUser = async()=>{
-        const response = await fetch(`http://localhost:5000/api/user/getuser`, {
+        const response = await fetch(`https://i-notebook-backend-lyart.vercel.app/api/user/getuser`, {
           method: "GET", 
           mode: "cors",
           headers: {
